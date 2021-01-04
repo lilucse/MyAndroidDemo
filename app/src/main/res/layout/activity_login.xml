@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="username"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="password"
+        android:layout_below="@id/tv_username"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/tv_username"
+        android:layout_toEndOf="@id/tv_username" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/tv_password"
+        android:layout_toEndOf="@id/tv_password"
+        android:layout_toRightOf="@id/tv_password" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_username"
+        android:layout_marginTop="244dp"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="184dp"
+        android:layout_toRightOf="@id/btn_signUp"
+        android:layout_alignTop="@id/btn_signUp"
+        android:text="login" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_username"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="369dp"
+        android:layout_toRightOf="@id/btn_signUp" />
+
+</RelativeLayout>
